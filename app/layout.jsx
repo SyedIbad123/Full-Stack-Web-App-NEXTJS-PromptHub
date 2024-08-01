@@ -1,6 +1,7 @@
 import "@styles/global.css";
 import Navbar from "@components/Navbar";
 import Provider from "@components/Provider";
+import SuspenseBoundary from "@components/SuspenseBoundary";
 
 const metadata = {
 	title: "prompthub",
@@ -17,7 +18,11 @@ function RootLayout({ children }) {
 					</div>
 					<main className="app">
 						<Navbar />
+						<SuspenseBoundary>
+
 						{children}
+
+						</SuspenseBoundary>
 					</main>
 				</Provider>
 			</body>
