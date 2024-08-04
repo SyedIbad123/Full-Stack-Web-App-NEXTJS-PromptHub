@@ -8,7 +8,7 @@ const EditPrompt = () => {
 	const searchParams = useSearchParams();
 	const promptId = searchParams.get("id");
 
-	console.log("prompt id ====>  ", promptId);
+	// console.log("prompt id ====>  ", promptId);
 
 	const [submitting, setSubmitting] = useState(false);
 	const [post, setPost] = useState({
@@ -30,10 +30,10 @@ const EditPrompt = () => {
 		if (promptId) getPromptDetails();
 	}, [promptId]);
 
-	console.log("router : ", router);
+	// console.log("router : ", router);
 	// console.log("session : ", session);
-	console.log("post : ", post);
-	console.log("submitting : ", submitting);
+	// console.log("post : ", post);
+	// console.log("submitting : ", submitting);
 
 	const updatePrompt = async (e) => {
 		e.preventDefault();
@@ -50,8 +50,8 @@ const EditPrompt = () => {
 					tag: post.tag,
 				}),
 			});
-			console.log("post : ", JSON.stringify({ prompt: post.prompt }));
-			console.log("response : ", response);
+			// console.log("post : ", JSON.stringify({ prompt: post.prompt }));
+			// console.log("response : ", response);
 			if (response.ok) {
 				router.push("/");
 			}

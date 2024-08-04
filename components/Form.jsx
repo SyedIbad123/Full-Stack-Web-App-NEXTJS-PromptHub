@@ -15,7 +15,7 @@ function Form({ type, post, setPost, submitting, handleSubmit }) {
 					onSubmit={handleSubmit}
 					className="mt-10 w-full max-w-xl flex flex-col gap-7 glassmorphism">
 					<label>
-						<span className="font-satoshi font-semibold text-base text-gray-700">
+						<span className="font-satoshi font-semibold text-base text-gray-200">
 							Your AI Prompt
 						</span>
 						<textarea
@@ -28,7 +28,7 @@ function Form({ type, post, setPost, submitting, handleSubmit }) {
 					</label>
 
 					<label>
-						<span className="font-satoshi font-semibold text-base text-gray-700">
+						<span className="font-satoshi font-semibold text-base text-gray-200">
 							Tag {` `}
 							<span className="font-normal">
 								(#product, webdevelopment, #idea)
@@ -43,7 +43,7 @@ function Form({ type, post, setPost, submitting, handleSubmit }) {
 						/>
 					</label>
 					<div className="flex-end mx-3 mb-5 gap-4">
-						<Link href="/" className="text-gray-500 text-sm">
+						<Link href="/" className="text-gray-300 text-sm">
 							Cancel
 						</Link>
 
@@ -56,8 +56,8 @@ function Form({ type, post, setPost, submitting, handleSubmit }) {
 					</div>
 				</form>
 				<div className=" w-full py-44 mt-10">
-					<p className="desc text-right max-w-md">
-						If you want to generate prompt. Click Here
+					<p className="desc text-right max-w-md ">
+						If you want to generate prompt. <Link href='/generate-prompt' className="blue_gradient text-2xl cursor-pointer" >Click Here</Link> 
 					</p>
 				</div>
 			</div>

@@ -6,7 +6,7 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 function Navbar() {
 	const { data: session } = useSession();
-	console.log("session : ", session);
+	// console.log("session : ", session);
 
 	const [providers, setProviders] = useState(null);
 	const [toggleDropDown, setToggleDropDown] = useState(false);
@@ -30,7 +30,7 @@ function Navbar() {
 					height={30}
 					className="object-contain"
 				/>
-				<p className="logo_tex hidden md:block">Prompthub</p>
+				<p className="logo_text hidden md:block">Prompthub</p>
 			</Link>
 
 			<div className="sm:flex hidden">

@@ -23,8 +23,8 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
 	}
 
 	return (
-		<div className="prompt_card">
-			<div className="flex justify-between items-start gap-5">
+		<div className="prompt_card ">
+			<div className="flex justify-between items-start gap-5 ">
 				<div className="flex-1 flex justify-start itmes-center gap-3 cursor-pointer " onClick={navigateToProfile}>
 					<Image
 						src={post.creator.image}
@@ -35,10 +35,10 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
 						
 					/>
 					<div className="flex flex-col">
-						<h3 className="font-satoshi font-semibold text-gray-900">
+						<h3 className="font-satoshi font-semibold text-black">
 							{post.creator.name}
 						</h3>
-						<p className="font-inter text-sm text-gray-500">
+						<p className="font-inter text-sm text-black">
 							{post.creator.email}
 						</p>
 					</div>
@@ -56,9 +56,9 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
 					/>
 				</div>
 			</div>
-			<p className="my-4 font-satoshi text-sm text-gray-700">{post.prompt}</p>
+			<p className="my-4 font-satoshi text-sm text-gray-600">{post.prompt}</p>
 			<p
-				className="font-inter text-sm blue_gradient cursor-pointer"
+				className="font-inter text-sm text-orange-500 cursor-pointer"
 				onClick={() => handleTagClick && handleTagClick(post.tag)}>
 				{post.tag}
 			</p>

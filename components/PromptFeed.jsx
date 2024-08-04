@@ -20,7 +20,7 @@ function PromptFeed() {
 
 
 	const handleTagClick = (e) => {
-		console.log("tag click", e);
+		// console.log("tag click", e);
 		setSearchText(e);
 	}
 
@@ -35,7 +35,7 @@ function PromptFeed() {
 			const data = await response.json();
 			setPosts(data);
 		};
-		console.log(posts);
+		// console.log(posts);
 		fetchPosts();
 	},[]);
 
@@ -51,7 +51,7 @@ function PromptFeed() {
 			);
 			setFilteredPosts(filtered);
 		}
-		console.log(posts);
+		// console.log(posts);
 	}, [searchText, posts]);
 
 

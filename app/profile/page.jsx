@@ -18,7 +18,7 @@ const MyProfile = () => {
 			const data = await response.json();
 			setPosts(data);
 		};
-		console.log(posts);
+		// console.log(posts);
 
 		if (session?.user.id) fetchPosts();
 	}, []);

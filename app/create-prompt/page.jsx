@@ -14,10 +14,10 @@ const CreatePrompt = () => {
 		tag: "",
 	});
 
-	console.log("router : ", router);
-	console.log("session : ", session);
-	console.log("post : ", post);
-	console.log("submitting : ", submitting);
+	// console.log("router : ", router);
+	// console.log("session : ", session);
+	// console.log("post : ", post);
+	// console.log("submitting : ", submitting);
 
 	const createPrompt = async (e) => {
 		e.preventDefault();
@@ -35,8 +35,8 @@ const CreatePrompt = () => {
 					"Content-Type": "application/json"
 				},
 			});
-			console.log("post : ", JSON.stringify({ prompt: post.prompt }));
-			console.log("response : ", response);
+			// console.log("post : ", JSON.stringify({ prompt: post.prompt }));
+			// console.log("response : ", response);
 			if (response.ok) {
 				router.push("/");
 			}
